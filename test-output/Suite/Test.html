@@ -1,0 +1,432 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/10</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Apr 13 16:04:29 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>301 seconds (301283 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.testCases.WholeLifeTest.WholeLifeApplicationTest()'><b>WholeLifeApplicationTest</b><br>Test class: com.qa.testCases.WholeLifeTest<br>Parameters: Scn 1, Yes, OA_Accord_3_5484, OA_Accord_3_5484, Jenifer1, Jones, 01/01/1960, Female, Georgia, Whole Life, Whole Life 95, Yes, Yes, 6.98541236E8, USA, Indiana, Yes, Street, City, 00012-4520, USA, 10.0, 9.632587412E9, No, Proposed Insured, Yes, 2356241, Alaska, 12/06/2030, 12000, 2100, 150000, No, Aruba, No, 231546525, 06-Dec-2030, No, na, 06-Dec-2030, 5623214, na, Individual, Aunt, Test_First, Test_Last, 7.56339751E8, 12/6/1960, Georgia, Male, Yes, Alaska, 12/6/2030, No, 5, Yes, To Deceased Beneficiary's Child(ren), Other, TestName1, TestLastName1, Male, 987-52-3698, 20, Entity1, CorporateOfficer1, Title1, AL, Other1, Friend, TestName2, TestLastName2, Male, 987-52-3692, 30, Entity2, Other2, Other, TestName3, TestLastName3, Male, 987-52-3693, 10, Entity3, Other3, Aunt, TestName4, TestLastName4, Female, 987-52-3694, 15, Entity4, Other4, Child, TestName5, TestLastName5, Male, 987-52-3695, 25, Entity5, Other5, 50000, 2500, Yes, 1000, 40, Automatic Premium Loan/APL (if available), Other, na, Yes, No, Yes, Yes</td>
+<td></td>
+<td>296</td>
+<td>com.qa.testCases.WholeLifeTest@39f31e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.testCases.WholeLifeTest.WholeLifeApplicationTest()'><b>WholeLifeApplicationTest</b><br>Test class: com.qa.testCases.WholeLifeTest<br>Parameters: Scn 2, No, OA_Accord_3_5484, OA_Accord_3_5484, Jenifer1, Jones, 01/01/1960, Female, Georgia, Whole Life, Whole Life 121, No, Yes, 6.98541236E8, USA, Indiana, Yes, Street, City, 00012-4520, USA, 10.0, 9.632587412E9, Yes, Proposed Insured, Yes, 2356241, Alaska, 12/06/2030, 12000, 2100, 150000, No, Aruba, No, 231546525, 06-Dec-2030, No, na, 06-Dec-2030, 5623214, na, Individual, Aunt, Test_First, Test_Last, 7.56339751E8, 12/6/1960, Georgia, Male, Yes, Alaska, 12/6/2030, No, 5, Yes, To Deceased Beneficiary's Child(ren), Other, TestName1, TestLastName1, Male, 987-52-3698, 20, Entity1, CorporateOfficer1, Title1, AL, Other1, Friend, TestName2, TestLastName2, Male, 987-52-3692, 30, Entity2, Other2, Other, TestName3, TestLastName3, Male, 987-52-3693, 10, Entity3, Other3, Aunt, TestName4, TestLastName4, Female, 987-52-3694, 15, Entity4, Other4, Child, TestName5, TestLastName5, Male, 987-52-3695, 25, Entity5, Other5, 50000, 2500, Yes, 1000, 40, Automatic Premium Loan/APL (if available), Other, na, Yes, No, Yes, Yes</td>
+<td><div><pre>org.testng.SkipException: Scn 2 is Skipped
+	at com.qa.testCases.WholeLifeTest.WholeLifeApplicationTest(WholeLifeTest.java:121)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace23311908", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace23311908'><pre>org.testng.SkipException: Scn 2 is Skipped
+	at com.qa.testCases.WholeLifeTest.WholeLifeApplicationTest(WholeLifeTest.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.testCases.WholeLifeTest@39f31e</td></tr>
+<tr>
+<td title='com.qa.testCases.WholeLifeTest.WholeLifeApplicationTest()'><b>WholeLifeApplicationTest</b><br>Test class: com.qa.testCases.WholeLifeTest<br>Parameters: Scn 3, No, OA_Accord_3_5484, OA_Accord_3_5484, Jenifer1, Jones, 01/01/1960, Female, Georgia, Whole Life, Whole Life 95, No, Yes, 6.98541236E8, USA, Indiana, Yes, Street, City, 00012-4520, USA, 10.0, 9.632587412E9, No, Proposed Insured, Yes, 2356241, Alaska, 12/06/2030, 12000, 2100, 150000, No, Aruba, No, 231546525, 06-Dec-2030, No, na, 06-Dec-2030, 5623214, na, Individual, Aunt, Test_First, Test_Last, 7.56339751E8, 12/6/1960, Georgia, Male, Yes, Alaska, 12/6/2030, No, 5, Yes, To Deceased Beneficiary's Child(ren), Other, TestName1, TestLastName1, Male, 987-52-3698, 20, Entity1, CorporateOfficer1, Title1, AL, Other1, Friend, TestName2, TestLastName2, Male, 987-52-3692, 30, Entity2, Other2, Other, TestName3, TestLastName3, Male, 987-52-3693, 10, Entity3, Other3, Aunt, TestName4, TestLastName4, Female, 987-52-3694, 15, Entity4, Other4, Child, TestName5, TestLastName5, Male, 987-52-3695, 25, Entity5, Other5, 50000, 2500, Yes, 1000, 40, Automatic Premium Loan/APL (if available), Other, na, Yes, No, Yes, Yes</td>
+<td><div><pre>org.testng.SkipException: Scn 3 is Skipped
+	at com.qa.testCases.WholeLifeTest.WholeLifeApplicationTest(WholeLifeTest.java:121)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace13374075", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace13374075'><pre>org.testng.SkipException: Scn 3 is Skipped
+	at com.qa.testCases.WholeLifeTest.WholeLifeApplicationTest(WholeLifeTest.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.testCases.WholeLifeTest@39f31e</td></tr>
+<tr>
+<td title='com.qa.testCases.WholeLifeTest.WholeLifeApplicationTest()'><b>WholeLifeApplicationTest</b><br>Test class: com.qa.testCases.WholeLifeTest<br>Parameters: Scn 4, No, OA_Accord_3_5484, OA_Accord_3_5484, Jenifer1, Jones, 01/01/1960, Female, Georgia, Whole Life, Whole Life 95, No, Yes, 6.98541236E8, USA, Indiana, Yes, Street, City, 00012-4520, USA, 10.0, 9.632587412E9, No, Proposed Insured, Yes, 2356241, Alaska, 12/06/2030, 12000, 2100, 150000, No, Aruba, No, 231546525, 06-Dec-2030, No, na, 06-Dec-2030, 5623214, na, Business, Aunt, Test_First, Test_Last, 7.56339751E8, 12/6/1960, Georgia, Male, Yes, Alaska, 12/6/2030, No, 5, Yes, To Deceased Beneficiary's Child(ren), Other, TestName1, TestLastName1, Male, 987-52-3698, 20, Entity1, CorporateOfficer1, Title1, AL, Other1, Friend, TestName2, TestLastName2, Male, 987-52-3692, 30, Entity2, Other2, Other, TestName3, TestLastName3, Male, 987-52-3693, 10, Entity3, Other3, Aunt, TestName4, TestLastName4, Female, 987-52-3694, 15, Entity4, Other4, Child, TestName5, TestLastName5, Male, 987-52-3695, 25, Entity5, Other5, 50000, 2500, Yes, 1000, 40, Automatic Premium Loan/APL (if available), Other, na, Yes, No, Yes, Yes</td>
+<td><div><pre>org.testng.SkipException: Scn 4 is Skipped
+	at com.qa.testCases.WholeLifeTest.WholeLifeApplicationTest(WholeLifeTest.java:121)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace19801808", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace19801808'><pre>org.testng.SkipException: Scn 4 is Skipped
+	at com.qa.testCases.WholeLifeTest.WholeLifeApplicationTest(WholeLifeTest.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.testCases.WholeLifeTest@39f31e</td></tr>
+<tr>
+<td title='com.qa.testCases.WholeLifeTest.WholeLifeApplicationTest()'><b>WholeLifeApplicationTest</b><br>Test class: com.qa.testCases.WholeLifeTest<br>Parameters: Scn 5, No, OA_Accord_3_5484, OA_Accord_3_5484, Jenifer1, Jones, 01/01/1960, Female, Georgia, Whole Life, Whole Life 95, No, Yes, 6.98541236E8, USA, Indiana, Yes, Street, City, 00012-4520, USA, 10.0, 9.632587412E9, No, Proposed Insured, Yes, 2356241, Alaska, 12/06/2030, 12000, 2100, 150000, No, Aruba, No, 231546525, 06-Dec-2030, No, na, 06-Dec-2030, 5623214, na, Established Trust, Aunt, Test_First, Test_Last, 7.56339751E8, 12/6/1960, Georgia, Male, Yes, Alaska, 12/6/2030, No, 5, Yes, To Deceased Beneficiary's Child(ren), Other, TestName1, TestLastName1, Male, 987-52-3698, 20, Entity1, CorporateOfficer1, Title1, AL, Other1, Friend, TestName2, TestLastName2, Male, 987-52-3692, 30, Entity2, Other2, Other, TestName3, TestLastName3, Male, 987-52-3693, 10, Entity3, Other3, Aunt, TestName4, TestLastName4, Female, 987-52-3694, 15, Entity4, Other4, Child, TestName5, TestLastName5, Male, 987-52-3695, 25, Entity5, Other5, 50000, 2500, Yes, 1000, 40, Automatic Premium Loan/APL (if available), Other, na, Yes, No, Yes, Yes</td>
+<td><div><pre>org.testng.SkipException: Scn 5 is Skipped
+	at com.qa.testCases.WholeLifeTest.WholeLifeApplicationTest(WholeLifeTest.java:121)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace27173859", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace27173859'><pre>org.testng.SkipException: Scn 5 is Skipped
+	at com.qa.testCases.WholeLifeTest.WholeLifeApplicationTest(WholeLifeTest.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.testCases.WholeLifeTest@39f31e</td></tr>
+<tr>
+<td title='com.qa.testCases.WholeLifeTest.WholeLifeApplicationTest()'><b>WholeLifeApplicationTest</b><br>Test class: com.qa.testCases.WholeLifeTest<br>Parameters: Scn 6, No, OA_Accord_3_5484, OA_Accord_3_5484, Jenifer1, Jones, 01/01/1960, Female, Georgia, Whole Life, Whole Life 95, No, Yes, 6.98541236E8, USA, Indiana, Yes, Street, City, 00012-4520, USA, 10.0, 9.632587412E9, No, Proposed Insured, Yes, 2356241, Alaska, 12/06/2030, 12000, 2100, 150000, No, Aruba, No, 231546525, 06-Dec-2030, No, na, 06-Dec-2030, 5623214, na, Qualified Plan, Aunt, Test_First, Test_Last, 7.56339751E8, 12/6/1960, Georgia, Male, Yes, Alaska, 12/6/2030, No, 5, Yes, To Deceased Beneficiary's Child(ren), Other, TestName1, TestLastName1, Male, 987-52-3698, 20, Entity1, CorporateOfficer1, Title1, AL, Other1, Friend, TestName2, TestLastName2, Male, 987-52-3692, 30, Entity2, Other2, Other, TestName3, TestLastName3, Male, 987-52-3693, 10, Entity3, Other3, Aunt, TestName4, TestLastName4, Female, 987-52-3694, 15, Entity4, Other4, Child, TestName5, TestLastName5, Male, 987-52-3695, 25, Entity5, Other5, 50000, 2500, Yes, 1000, 40, Automatic Premium Loan/APL (if available), Other, na, Yes, No, Yes, Yes</td>
+<td><div><pre>org.testng.SkipException: Scn 6 is Skipped
+	at com.qa.testCases.WholeLifeTest.WholeLifeApplicationTest(WholeLifeTest.java:121)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace16127699", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace16127699'><pre>org.testng.SkipException: Scn 6 is Skipped
+	at com.qa.testCases.WholeLifeTest.WholeLifeApplicationTest(WholeLifeTest.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.testCases.WholeLifeTest@39f31e</td></tr>
+<tr>
+<td title='com.qa.testCases.WholeLifeTest.WholeLifeApplicationTest()'><b>WholeLifeApplicationTest</b><br>Test class: com.qa.testCases.WholeLifeTest<br>Parameters: Scn 7, No, OA_Accord_3_5484, OA_Accord_3_5484, Jenifer1, Jones, 01/01/1960, Female, Georgia, Whole Life, Whole Life 95, No, Yes, 6.98541236E8, USA, Indiana, Yes, Street, City, 00012-4520, USA, 10.0, 9.632587412E9, No, Proposed Insured, Yes, 2356241, Alaska, 12/06/2030, 12000, 2100, 150000, No, Aruba, No, 231546525, 06-Dec-2030, No, na, 06-Dec-2030, 5623214, na, UGMA/UTMA, Aunt, Test_First, Test_Last, 7.56339751E8, 12/6/1960, Georgia, Male, Yes, Alaska, 12/6/2030, No, 5, Yes, To Deceased Beneficiary's Child(ren), Other, TestName1, TestLastName1, Male, 987-52-3698, 20, Entity1, CorporateOfficer1, Title1, AL, Other1, Friend, TestName2, TestLastName2, Male, 987-52-3692, 30, Entity2, Other2, Other, TestName3, TestLastName3, Male, 987-52-3693, 10, Entity3, Other3, Aunt, TestName4, TestLastName4, Female, 987-52-3694, 15, Entity4, Other4, Child, TestName5, TestLastName5, Male, 987-52-3695, 25, Entity5, Other5, 50000, 2500, Yes, 1000, 40, Automatic Premium Loan/APL (if available), Other, na, Yes, No, Yes, Yes</td>
+<td><div><pre>org.testng.SkipException: Scn 7 is Skipped
+	at com.qa.testCases.WholeLifeTest.WholeLifeApplicationTest(WholeLifeTest.java:121)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace20326162", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace20326162'><pre>org.testng.SkipException: Scn 7 is Skipped
+	at com.qa.testCases.WholeLifeTest.WholeLifeApplicationTest(WholeLifeTest.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.testCases.WholeLifeTest@39f31e</td></tr>
+<tr>
+<td title='com.qa.testCases.WholeLifeTest.WholeLifeApplicationTest()'><b>WholeLifeApplicationTest</b><br>Test class: com.qa.testCases.WholeLifeTest<br>Parameters: Scn 8, No, OA_Accord_3_5484, OA_Accord_3_5484, Jenifer1, Jones, 01/01/1960, Female, Georgia, Whole Life, Whole Life 95, No, Yes, 6.98541236E8, USA, Indiana, Yes, Street, City, 00012-4520, USA, 10.0, 9.632587412E9, No, Proposed Insured, Yes, 2356241, Alaska, 12/06/2030, 12000, 2100, 150000, No, Aruba, No, 231546525, 06-Dec-2030, No, na, 06-Dec-2030, 5623214, na, 412, Aunt, Test_First, Test_Last, 7.56339751E8, 12/6/1960, Georgia, Male, Yes, Alaska, 12/6/2030, No, 5, Yes, To Deceased Beneficiary's Child(ren), Other, TestName1, TestLastName1, Male, 987-52-3698, 20, Entity1, CorporateOfficer1, Title1, AL, Other1, Friend, TestName2, TestLastName2, Male, 987-52-3692, 30, Entity2, Other2, Other, TestName3, TestLastName3, Male, 987-52-3693, 10, Entity3, Other3, Aunt, TestName4, TestLastName4, Female, 987-52-3694, 15, Entity4, Other4, Child, TestName5, TestLastName5, Male, 987-52-3695, 25, Entity5, Other5, 50000, 2500, Yes, 1000, 40, Automatic Premium Loan/APL (if available), Other, na, Yes, No, Yes, Yes</td>
+<td><div><pre>org.testng.SkipException: Scn 8 is Skipped
+	at com.qa.testCases.WholeLifeTest.WholeLifeApplicationTest(WholeLifeTest.java:121)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace9746509", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace9746509'><pre>org.testng.SkipException: Scn 8 is Skipped
+	at com.qa.testCases.WholeLifeTest.WholeLifeApplicationTest(WholeLifeTest.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.testCases.WholeLifeTest@39f31e</td></tr>
+<tr>
+<td title='com.qa.testCases.WholeLifeTest.WholeLifeApplicationTest()'><b>WholeLifeApplicationTest</b><br>Test class: com.qa.testCases.WholeLifeTest<br>Parameters: Scn 9, No, OA_Accord_3_5484, OA_Accord_3_5484, Jenifer1, Jones, 01/01/1960, Female, Georgia, Whole Life, Whole Life 95, No, Yes, 6.98541236E8, USA, Indiana, Yes, Street, City, 00012-4520, USA, 10.0, 9.632587412E9, No, Other, Yes, 2356241, Alaska, 12/06/2030, 12000, 2100, 150000, No, Aruba, No, 231546525, 06-Dec-2030, No, na, 06-Dec-2030, 5623214, na, Business, Aunt, Test_First, Test_Last, 7.56339751E8, 12/6/1960, Georgia, Male, Yes, Alaska, 12/6/2030, No, 5, Yes, To Deceased Beneficiary's Child(ren), Other, TestName1, TestLastName1, Male, 987-52-3698, 20, Entity1, CorporateOfficer1, Title1, AL, Other1, Friend, TestName2, TestLastName2, Male, 987-52-3692, 30, Entity2, Other2, Other, TestName3, TestLastName3, Male, 987-52-3693, 10, Entity3, Other3, Aunt, TestName4, TestLastName4, Female, 987-52-3694, 15, Entity4, Other4, Child, TestName5, TestLastName5, Male, 987-52-3695, 25, Entity5, Other5, 50000, 2500, Yes, 1000, 40, Automatic Premium Loan/APL (if available), Other, na, Yes, No, Yes, Yes</td>
+<td><div><pre>org.testng.SkipException: Scn 9 is Skipped
+	at com.qa.testCases.WholeLifeTest.WholeLifeApplicationTest(WholeLifeTest.java:121)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace30020508", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace30020508'><pre>org.testng.SkipException: Scn 9 is Skipped
+	at com.qa.testCases.WholeLifeTest.WholeLifeApplicationTest(WholeLifeTest.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.testCases.WholeLifeTest@39f31e</td></tr>
+<tr>
+<td title='com.qa.testCases.WholeLifeTest.WholeLifeApplicationTest()'><b>WholeLifeApplicationTest</b><br>Test class: com.qa.testCases.WholeLifeTest<br>Parameters: Scn 10, No, OA_Accord_3_5484, OA_Accord_3_5484, Jenifer1, Jones, 01/01/1960, Female, Georgia, Whole Life, Whole Life 95, No, Yes, 6.98541236E8, USA, Indiana, Yes, Street, City, 00012-4520, USA, 10.0, 9.632587412E9, Yes, Other, Yes, 2356241, Alaska, 12/06/2030, 12000, 2100, 150000, No, Aruba, No, 231546525, 06-Dec-2030, No, na, 06-Dec-2030, 5623214, na, Business, Aunt, Test_First, Test_Last, 7.56339751E8, 12/6/1960, Georgia, Male, Yes, Alaska, 12/6/2030, No, 5, Yes, To Deceased Beneficiary's Child(ren), Other, TestName1, TestLastName1, Male, 987-52-3698, 20, Entity1, CorporateOfficer1, Title1, AL, Other1, Friend, TestName2, TestLastName2, Male, 987-52-3692, 30, Entity2, Other2, Other, TestName3, TestLastName3, Male, 987-52-3693, 10, Entity3, Other3, Aunt, TestName4, TestLastName4, Female, 987-52-3694, 15, Entity4, Other4, Child, TestName5, TestLastName5, Male, 987-52-3695, 25, Entity5, Other5, 50000, 2500, Yes, 1000, 40, Automatic Premium Loan/APL (if available), Other, na, Yes, No, Yes, Yes</td>
+<td><div><pre>org.testng.SkipException: Scn 10 is Skipped
+	at com.qa.testCases.WholeLifeTest.WholeLifeApplicationTest(WholeLifeTest.java:121)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1748283", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1748283'><pre>org.testng.SkipException: Scn 10 is Skipped
+	at com.qa.testCases.WholeLifeTest.WholeLifeApplicationTest(WholeLifeTest.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.testCases.WholeLifeTest@39f31e</td></tr>
+<tr>
+<td title='com.qa.testCases.WholeLifeTest.WholeLifeApplicationTest()'><b>WholeLifeApplicationTest</b><br>Test class: com.qa.testCases.WholeLifeTest<br>Parameters: Scn 11, No, OA_Accord_3_5484, OA_Accord_3_5484, Jenifer1, Jones, 01/01/1960, Female, Georgia, Whole Life, Whole Life 95, Yes, Yes, 6.98541236E8, USA, Indiana, Yes, Street, City, 00012-4520, USA, 10.0, 9.632587412E9, Yes, Proposed Insured, Yes, 2356241, Alaska, 12/06/2030, 12000, 2100, 150000, No, Aruba, No, 231546525, 06-Dec-2030, No, na, 06-Dec-2030, 5623214, na, Business, Aunt, Test_First, Test_Last, 7.56339751E8, 12/6/1960, Georgia, Male, Yes, Alaska, 12/6/2030, No, 5, Yes, To Deceased Beneficiary's Child(ren), Other, TestName1, TestLastName1, Male, 987-52-3698, 20, Entity1, CorporateOfficer1, Title1, AL, Other1, Friend, TestName2, TestLastName2, Male, 987-52-3692, 30, Entity2, Other2, Other, TestName3, TestLastName3, Male, 987-52-3693, 10, Entity3, Other3, Aunt, TestName4, TestLastName4, Female, 987-52-3694, 15, Entity4, Other4, Child, TestName5, TestLastName5, Male, 987-52-3695, 25, Entity5, Other5, 50000, 2500, Yes, 1000, 40, Automatic Premium Loan/APL (if available), Other, na, Yes, No, Yes, Yes</td>
+<td><div><pre>org.testng.SkipException: Scn 11 is Skipped
+	at com.qa.testCases.WholeLifeTest.WholeLifeApplicationTest(WholeLifeTest.java:121)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace22609822", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace22609822'><pre>org.testng.SkipException: Scn 11 is Skipped
+	at com.qa.testCases.WholeLifeTest.WholeLifeApplicationTest(WholeLifeTest.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.testCases.WholeLifeTest@39f31e</td></tr>
+</table><p>
+</body>
+</html>
